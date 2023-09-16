@@ -420,7 +420,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapons_5.0_15
+      name: sssr2reload
       rect:
         serializedVersion: 2
         x: 25
@@ -819,7 +819,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weapons_5.0_35
+      name: riflereload
       rect:
         serializedVersion: 2
         x: 36
@@ -1606,13 +1606,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      mask: -1960679428
+      weapons_5.0_13: -433972933
       weapons_5.0_56: -2001098316
       laser3: -975057678
       weapons_5.0_62: 160101120
       weapons_5.0_41: -272085219
       weapons_5.0_58: 110360840
-      weapons_5.0_15: 1770572111
       Laser2: 1031275998
       weapons_5.0_2: 1799369502
       weapons_5.0_1: -842349925
@@ -1629,7 +1628,6 @@ TextureImporter:
       weapons_5.0_38: 281916495
       proj1: 2031686152
       weapons_5.0_51: -1156531981
-      weapons_5.0_35: 1701292653
       weapons_5.0_45: 1181101084
       weapons_5.0_65: 1009080415
       weapons_5.0_29: 674434866
@@ -1643,11 +1641,12 @@ TextureImporter:
       weapons_5.0_3: 1401478118
       weapons_5.0_33: -1687215331
       weapons_5.0_26: 464023990
-      Flamethrower: 513828780
+      proj: 1580057313
       weapons_5.0_18: 906461031
       weapons_5.0_49: -1579790887
-      proj: 1580057313
+      Flamethrower: 513828780
       weapons_5.0_67: -105326140
+      sssr2reload: 1770572111
       weapons_5.0_39: 245810951
       weapons_5.0_12: -527357612
       weapons_5.0_59: -489351771
@@ -1664,6 +1663,7 @@ TextureImporter:
       weapons_5.0_46: 1799307563
       weapons_5.0_54: 375808510
       weapons_5.0_28: 611989103
+      riflereload: 1701292653
       rifle: -1680109627
       weapons_5.0_50: 574652
       Laser1: 1247248488
@@ -1674,8 +1674,8 @@ TextureImporter:
       weapons_5.0_37: 1589303233
       weapons_5.0_5: -110189692
       weapons_5.0_68: -1638598162
+      mask: -1960679428
       weapons_5.0_21: 1622565383
-      weapons_5.0_13: -433972933
       weapons_5.0_22: 1001601000
       weapons_5.0_9: 94669030
   spritePackingTag: 

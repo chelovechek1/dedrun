@@ -74,9 +74,9 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _length: 115.27829
+    - _length: 100
     - _pixelSize: 0.29
-    - _time: 0.18516801
+    - _time: 0.1327342
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

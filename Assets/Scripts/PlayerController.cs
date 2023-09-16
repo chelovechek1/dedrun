@@ -7,17 +7,24 @@ using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 public class PlayerController : MonoBehaviour
 {
+    private PlayerAnimator animator;
     [SerializeField] private Rigidbody2D rb;
+
     [SerializeField] private float speed;
     [SerializeField] private float jumpForse;
     [SerializeField] private float fallForse;
+
     private float maxFallingSpeed = -20f;
     private float dashForse = 1f;
     private bool dashReady = true;
     [SerializeField] private bool onGround = true;
     private void Update()
     {
-        rb.velocity = new Vector2(speed * dashForse * Input.GetAxis("Horizontal"), rb.velocity.y);
+        animator = GetComponent<PlayerAnimator>();
+        if (animator.canRun)
+        {
+            rb.velocity = new Vector2(speed * dashForse * Input.GetAxis("Horizontal"), rb.velocity.y);
+        }
 
         if (rb.velocity.y < maxFallingSpeed) rb.velocity = new Vector2(rb.velocity.x, maxFallingSpeed);
 

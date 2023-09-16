@@ -6,24 +6,29 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
+    private Weapons weapons;
+
     public float speed;
     public float damage;
     public float range;
+    public bool magnetic;
 
     public int[] GunSpread;
 
     void Start()
     {
+        
         transform.localEulerAngles += new Vector3(0, 0, UnityEngine.Random.Range(GunSpread[0], GunSpread[1]));
         speed += UnityEngine.Random.Range(GunSpread[0], GunSpread[1]);
     }
 
     void FixedUpdate()
     {
+        weapons = GetComponent<Weapons>();
         rb.velocity = transform.right * speed;
         //Destroy(gameObject, range * Time.deltaTime);
         GameObject magnet = (GameObject.Find("MagnetPrefab(Clone)"));
-        if (magnet != null && magnet.transform.parent != null)
+        if (magnet != null && magnet.transform.parent != null && magnetic == true)
         {
             Vector3 dir = (Vector2)magnet.transform.position - rb.position;
             dir.Normalize();
