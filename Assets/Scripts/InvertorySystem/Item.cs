@@ -1,9 +1,8 @@
-using Entities;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Invertory
+public abstract class Item
 {
-	public IHasInvertory Owner;
+	public virtual Vector2Int Size => new(1, 1);
 }
