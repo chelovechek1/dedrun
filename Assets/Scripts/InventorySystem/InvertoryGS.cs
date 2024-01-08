@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Item
+namespace GlobalSystems
 {
-	public virtual Vector2Int Size => new(1, 1);
+	public class InvertorySystem : MonoBehaviour
+	{
+
+	}
 }

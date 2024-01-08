@@ -1,3 +1,5 @@
+using InventorySystem;
+using InventorySystem.Items.Weapons;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,11 +9,11 @@ namespace Entities.Creatures.Player
 {
     public class Player : Creature, IHasInventory
     {
-		private Inventory _inventory;
+		private PlayerInventory _inventory;
 		public Inventory inventory
 		{
 			get => _inventory;
-			set => _inventory = this.SetInvertory(_inventory, value);
+			set => _inventory = (PlayerInventory)this.SetInvertory(_inventory, value);
 		}
 
 		protected override void Start()
